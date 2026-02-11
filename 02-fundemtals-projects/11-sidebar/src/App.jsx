@@ -1,0 +1,17 @@
+import Home from './Home';
+import Modal from './Modal';
+import Sidebar from './Sidebar';
+import { AppProvider } from './Context';
+
+const App = () => {
+  return (
+    <>
+      <AppProvider>
+        <Home />
+        <Modal />
+        <Sidebar />
+      </AppProvider>
+    </>
+  );
+};
+export default App;
